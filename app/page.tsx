@@ -1,4 +1,4 @@
-import TopRepositories from "./components/TopRepositories/TopRepositories";
+import TopRepositories from "./components/TopRepositories";
 
 export default function Home() {
   return (

@@ -27,6 +27,9 @@ const config: Config = {
           100: "#347d39",
           200: "#46954a",
         },
+        githubBlue: {
+          50: "#539bf5",
+        },
       },
     },
   },

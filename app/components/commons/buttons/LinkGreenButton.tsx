@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-function LinkGreenButton({
+export default function LinkGreenButton({
   link,
   text,
   image,
@@ -22,5 +22,3 @@ function LinkGreenButton({
     </Link>
   );
 }
-
-export default LinkGreenButton;
