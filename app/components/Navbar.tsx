@@ -16,7 +16,7 @@ export default function Navbar() {
     <header>
       <nav className="px-3 py-3 shadow-inner border-b border-githubGray-150 bg-githubDark-200 w-full flex items-center justify-between">
         <ul className="flex gap-3 items-center">
-          <LayoutComponents>
+          <LayoutComponents className="hover:border-githubGray-200">
             <Image alt={"github"} height={20} src={MenuSvg} width={20} />
           </LayoutComponents>
           <Image
@@ -46,7 +46,7 @@ export default function Navbar() {
             </LayoutComponents>
           </li>
           <li>
-            <div className="h-[19px] w-[1px]  bg-githubGray-200" />
+            <div className="h-[19px] w-[1px] bg-githubGray-200" />
           </li>
           <li>
             <Tooltip text="Create new...">

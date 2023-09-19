@@ -34,14 +34,14 @@ export default function TopRepositories() {
   }, []);
 
   return (
-    <aside className="border-r border-githubGray-150 p-6 bg-githubDark-100">
+    <aside className="min-h-screen min-w-[335px] border-r border-githubGray-150 px-6 bg-githubDark-100">
       {loading ? (
         <div className="h-96 w-64">
           <Loading />
         </div>
       ) : (
-        <>
-          <h2 className="text-sm mb-2 text-githubGray-50 items-center font-semibold flex gap-28 mt-4">
+        <div className="sticky top-0 bottom-0 py-6">
+          <h2 className="text-sm mb-2 text-githubGray-50 items-center font-semibold flex justify-between mt-4">
             Top Repositories
             <LinkGreenButton image={BookSvg} imgAlt="new repository" link={"/"} text={"New"} />
           </h2>
@@ -62,7 +62,7 @@ export default function TopRepositories() {
               When you take actions across GitHub, we’ll provide links to that activity here.
             </p>
           </div>
-        </>
+        </div>
       )}
     </aside>
   );

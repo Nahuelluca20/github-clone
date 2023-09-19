@@ -6,7 +6,7 @@ export default function LayoutComponents({
   className?: string;
 }) {
   const baseClasses =
-    "cursor-pointer flex items-center h-full p-1.5 border-[1.8px] border-githubGray-200 rounded-md w-fit";
+    "cursor-pointer flex items-center h-full p-1.5 border-[1.8px] border-githubGray-150 rounded-md w-fit";
 
   const containerClasses = className ? `${baseClasses} ${className}` : baseClasses;
 
